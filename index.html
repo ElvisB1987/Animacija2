@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asigment Krug</title>
+    <style>
+
+        #box-1{
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            left: 0;
+            right: 0;
+            background-color: #050210;
+            margin: 0 auto;
+            filter: blur(1px);
+        }
+
+        #circle-1 {
+            position: relative;
+            width: 450px;
+            height: 450px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 85px;
+            border-radius: 100%;
+            background:linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            box-shadow: 0 0 150px #d8cdd2da;
+       
+            
+         
+
+            animation: my-animation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+           
+        }
+
+       #circle-2 {
+            position: relative;
+            content: '';
+            width: 410px;
+            height: 410px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 20px;
+            border-radius: 100%;
+            background-color: #050210;
+
+            animation: my-animation2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            }
+      
+
+
+        
+
+       @keyframes my-animation {
+           0% {
+               transform: rotate(0deg);
+           }
+
+           20% {
+               transform: rotate(72deg);
+           }
+
+           40% {
+               transform: rotate(144deg); 
+           }
+
+           60% {
+               transform: rotate(216deg);
+           }
+           80% {
+               transform: rotate(288deg);
+           }
+           
+           100% {
+               transform: rotate(360deg);
+           }
+       }
+
+       @keyframes my-animation2 {
+           0% {
+               transform: rotate(0deg);
+               box-shadow: inset 0 0 20px rgb(63, 62, 62);
+             
+           }
+
+           20% {
+               transform: rotate(72deg);
+               box-shadow: inset 0 0 50px rgb(63, 62, 62);
+          
+           }
+
+           40% {
+               transform: rotate(144deg);
+               box-shadow: inset 0 0 100px rgb(63, 62, 62);
+            
+           }
+
+           60% {
+               transform: rotate(216deg);
+               box-shadow: inset 0 0 150px rgb(63, 62, 62);
+           }
+           80% {
+               transform: rotate(288deg);
+               box-shadow: inset 0 0 200px rgb(63, 62, 62);
+           }
+           
+           100% {
+               transform: rotate(360deg);
+               box-shadow: inset 0 0 250px rgb(63, 62, 62);
+           }
+       }
+    </style>
+</head>
+<body>
+    <div id="box-1">
+        <div id="circle-1">
+            <div id="circle-2"></div>
+    </div>
+        
+    </div>
+</body>
+</html>
